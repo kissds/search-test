@@ -1,0 +1,20 @@
+---
+version: 1.0
+configuration:
+  has_webserver: true
+  scoring:
+    command: "npm install; npm test"
+    files:
+        - unit.xml
+  ide_config:
+    default_open_files:
+    - src/app/data.service.ts
+    - src/app/app.component.ts
+    - src/app/search/search.component.ts
+    - src/app/search/search.component.html
+    - src/app/list/list.component.ts
+    - " src/app/list/list.component.html"
+    project_menu:
+      run: npm start
+      install: npm install
+      test: npm test
